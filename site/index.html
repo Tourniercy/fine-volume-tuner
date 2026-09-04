@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fine Volume Tuner — Réglage fin du volume Android</title>
+<meta name="description" content="Réglez le volume de votre Android plus finement que les paliers système : plus doux que le minimum, plus fort que le maximum. Sans pub, sans tracking.">
+<style>
+:root{--bg:#f8fafc;--card:#ffffff;--ink:#0f172a;--muted:#64748b;--accent:#1565c0;--accent2:#42a5f5;--ok:#16a34a;--radius:16px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.wrap{max-width:880px;margin:0 auto;padding:24px 20px 80px}
+header{display:flex;align-items:center;gap:14px;padding:18px 0 8px}
+.logo{width:56px;height:56px;flex:none}
+h1{font-size:clamp(1.5rem,4vw,2.2rem);letter-spacing:-.02em}
+h1 span{color:var(--accent)}
+.tag{color:var(--muted);font-size:1.02rem}
+.badges{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 6px}
+.badge{background:var(--card);border:1px solid #e2e8f0;border-radius:999px;padding:5px 14px;font-size:.86rem;color:var(--muted)}
+.badge b{color:var(--ink)}
+.hero{background:var(--card);border:1px solid #e2e8f0;border-radius:var(--radius);padding:28px;margin-top:18px;box-shadow:0 1px 3px rgba(15,23,42,.05)}
+.hero p{color:var(--muted);max-width:60ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:13px 22px;border-radius:12px;transition:.15s}
+.btn:hover{background:#0d47a1}
+.btn.ghost{background:transparent;color:var(--accent);border:1.5px solid var(--accent)}
+.btn.ghost:hover{background:#e3f2fd}
+section{margin-top:34px}
+h2{font-size:1.25rem;margin-bottom:12px;letter-spacing:-.01em}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid #e2e8f0;border-radius:var(--radius);padding:18px}
+.card h3{font-size:1rem;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+.card p{color:var(--muted);font-size:.93rem}
+.steps{background:var(--card);border:1px solid #e2e8f0;border-radius:var(--radius);padding:22px}
+.steps ol{padding-left:20px;color:var(--muted)}
+.steps li{margin:6px 0}
+.steps li::marker{color:var(--accent);font-weight:700}
+.faq details{background:var(--card);border:1px solid #e2e8f0;border-radius:12px;padding:14px 18px;margin-bottom:10px}
+.faq summary{cursor:pointer;font-weight:600}
+.faq p{color:var(--muted);margin-top:8px;font-size:.95rem}
+footer{margin-top:48px;color:var(--muted);font-size:.88rem;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between}
+footer a{color:var(--accent);text-decoration:none}
+footer a:hover{text-decoration:underline}
+.k{color:var(--ok);font-weight:700}
+@media(prefers-color-scheme:light){body{background:#f8fafc}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <svg class="logo" viewBox="0 0 108 108" aria-hidden="true"><rect width="108" height="108" rx="24" fill="#1565C0"/><path fill="#fff" d="M30 46h10l14-12v40L40 62H30z"/><path fill="#fff" fill-opacity=".35" d="M60 40a18 18 0 0 1 0 28l-3-3a14 14 0 0 0 0-22z"/><circle cx="70" cy="58" r="3" fill="#fff" fill-opacity=".9"/><circle cx="78" cy="50" r="2" fill="#fff"/></svg>
+  <div>
+    <h1>Fine Volume <span>Tuner</span></h1>
+    <p class="tag">Réglage fin du volume Android — entre les paliers, au-dessus et en-dessous.</p>
+  </div>
+</header>
+
+<div class="badges">
+  <div class="badge"><b>100% gratuit</b>, sans pub</div>
+  <div class="badge"><b>0</b> permission internet</div>
+  <div class="badge"><b>Open source</b> MIT</div>
+  <div class="badge">Android <b>7.0+</b></div>
+</div>
+
+<div class="hero">
+  <h2>Le volume de votre téléphone est trop fort… ou pas assez ?</h2>
+  <p>Android ne propose qu'une dizaine de paliers de volume. Fine Volume Tuner ajoute un réglage <b>fin</b> par-dessus : atténuez jusqu'à <b>−30 dB</b> sous le palier minimum (idéal pour écouter de la musique au calme la nuit), ou boostez jusqu'à <b>+15 dB</b> au-delà du maximum. Réglage global ou palier par palier, séparément pour la musique, la sonnerie, les alarmes, les notifications et les appels.</p>
+  <div class="cta">
+    <a class="btn" href="#download">⬇︎ Télécharger l'APK</a>
+    <a class="btn ghost" href="https://github.com/Tourniercy/fine-volume-tuner" target="_blank" rel="noopener">Code source</a>
+  </div>
+</div>
+
+<section>
+  <h2>Fonctionnalités</h2>
+  <div class="grid">
+    <div class="card"><h3>🎚️ Plus doux que le minimum</h3><p>Jusqu'à −30 dB sous le palier 1 : parfait la nuit ou en cas de migraine.</p></div>
+    <div class="card"><h3>🔊 Plus fort que le maximum</h3><p>Boost jusqu'à +15 dB au-delà du palier maximum du système.</p></div>
+    <div class="card"><h3>🪜 Réglage par palier</h3><p>Chaque palier de volume peut avoir son propre gain : le palier 4 trop fort ? Atténuez-le, lui seul.</p></div>
+    <div class="card"><h3>🎼 Par type de son</h3><p>Musique, sonnerie, alarme, notifications, appels, système — chacun réglé séparément.</p></div>
+    <div class="card"><h3>♾️ Service persistant</h3><p>Le réglage reste actif en arrière-plan et se réapplique automatiquement quand vous changez le volume.</p></div>
+    <div class="card"><h3>🔒 Vie privée totale</h3><p>Aucune connexion réseau, aucune donnée collectée, aucun tracker. Code source ouvert.</p></div>
+  </div>
+</section>
+
+<section class="steps" id="download">
+  <h2>Installation</h2>
+  <ol>
+    <li>Téléchargez l'APK ci-dessous (dernière version).</li>
+    <li>Ouvrez-le ; Android demande d'autoriser l'installation d'applications inconnues pour votre navigateur — acceptez.</li>
+    <li>Installez, ouvrez Fine Volume Tuner, activez le moteur et réglez.</li>
+  </ol>
+  <div class="cta">
+    <a class="btn" id="dl" href="https://github.com/Tourniercy/fine-volume-tuner/releases/latest/download/fine-volume-tuner.apk">⬇︎ fine-volume-tuner.apk</a>
+    <a class="btn ghost" href="https://github.com/Tourniercy/fine-volume-tuner/releases" target="_blank" rel="noopener">Toutes les versions</a>
+  </div>
+</section>
+
+<section class="faq">
+  <h2>Questions fréquentes</h2>
+  <details><summary>Ça marche sans root ?</summary><p>Oui. L'app utilise <code>LoudnessEnhancer</code>, un effet audio officiel d'Android appliqué au mixage global — aucune permission spéciale, aucun root.</p></details>
+  <details><summary>Quelles permissions ?</summary><p>Uniquement : service en avant-plan (pour garder le réglage actif), notification (l'indicateur du service), démarrage au boot (optionnel). <span class="k">Aucune permission internet.</span></p></details>
+  <details><summary>Distorsion à fond le boost ?</summary><p>Comme tout boost logiciel, un réglage extrême peut saturer les petits haut-parleurs. Restez raisonnable (+6 à +10 dB).</p></details>
+  <details><summary>Le réglage ne marche plus ?</summary><p>Certains constructeurs ( Xiaomi, Huawei…) tuent les apps en arrière-plan. Excluez l'app de l'optimisation batterie, ou rouvrez-la.</p></details>
+</section>
+
+<footer>
+  <div>© 2026 <a href="https://github.com/Tourniercy" target="_blank" rel="noopener">Tourniercy</a> · Fine Volume Tuner</div>
+  <div><a href="https://github.com/Tourniercy/fine-volume-tuner" target="_blank" rel="noopener">GitHub</a> · APK signé, mis à jour à chaque release</div>
+</footer>
+</div>
+</body>
+</html>
