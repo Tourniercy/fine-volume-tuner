@@ -22,5 +22,13 @@
             </intent-filter>
         </activity>
         <!-- TunerService + BootReceiver ajoutés aux Tasks 2 et 4 -->
+        <service
+            android:name=".service.TunerService"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="fine_audio_gain_adjustment" />
+        </service>
     </application>
 </manifest>

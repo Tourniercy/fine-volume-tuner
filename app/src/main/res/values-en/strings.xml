@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Fine Volume Tuner</string>
+    <string name="notif_channel">Volume tuning</string>
+    <string name="notif_title">Fine Volume Tuner active</string>
+    <string name="notif_text">Fine volume adjustment is applied</string>
 </resources>

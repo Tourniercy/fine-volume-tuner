@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Réglage Fin du Volume</string>
+    <string name="notif_channel">Réglage du volume</string>
+    <string name="notif_title">Fine Volume Tuner actif</string>
+    <string name="notif_text">Le réglage fin du volume est appliqué</string>
 </resources>
