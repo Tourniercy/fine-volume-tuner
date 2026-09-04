@@ -7,6 +7,7 @@ import app.rilcy.finevolumetuner.gainmath.GainProfiles
 import app.rilcy.finevolumetuner.gainmath.StreamConfig
 import app.rilcy.finevolumetuner.gainmath.TunerConfig
 import app.rilcy.finevolumetuner.gainmath.TunerMode
+import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -33,7 +34,7 @@ class TunerViewModel(
     private val repo: ConfigRepository,
     private val service: ServiceControl,
     private val maxVolumeSource: StreamMaxVolumeSource,
-) {
+) : ViewModel() {
 
     private val _uiState = MutableStateFlow(TunerUiState(config = repo.load()))
     val uiState: StateFlow<TunerUiState> = _uiState.asStateFlow()
