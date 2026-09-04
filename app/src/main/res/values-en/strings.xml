@@ -4,4 +4,13 @@
     <string name="notif_channel">Volume tuning</string>
     <string name="notif_title">Fine Volume Tuner active</string>
     <string name="notif_text">Fine volume adjustment is applied</string>
+    <string name="engine_on">Active</string>
+    <string name="engine_off">Inactive</string>
+    <string name="mode_label">Mode</string>
+    <string name="mode_normal">Global adjust</string>
+    <string name="mode_per_step">Per step</string>
+    <string name="per_step_label">Tune each volume step</string>
+    <string name="step_n">Step %1$d</string>
+    <string name="autostart_label">Restart on boot</string>
+    <string name="reset_label">Reset</string>
 </resources>

@@ -4,4 +4,13 @@
     <string name="notif_channel">Réglage du volume</string>
     <string name="notif_title">Fine Volume Tuner actif</string>
     <string name="notif_text">Le réglage fin du volume est appliqué</string>
+    <string name="engine_on">Actif</string>
+    <string name="engine_off">Inactif</string>
+    <string name="mode_label">Mode</string>
+    <string name="mode_normal">Ajustement global</string>
+    <string name="mode_per_step">Par palier</string>
+    <string name="per_step_label">Réglage de chaque palier de volume</string>
+    <string name="step_n">Palier %1$d</string>
+    <string name="autostart_label">Redémarrer au boot</string>
+    <string name="reset_label">Réinitialiser</string>
 </resources>
